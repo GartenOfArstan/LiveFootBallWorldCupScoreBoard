@@ -1,7 +1,26 @@
 package si.arstan.scoreboard;
 
-public class ScoreBoard {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+import java.util.List;
+
+public class ScoreBoard implements IScoreBoard{
+
+    @Override
+    public void startMatch(Team homeTeam, Team awayTeam) {
+
+    }
+
+    @Override
+    public void updateMatch(Match match, Score score) {
+
+    }
+
+    @Override
+    public void finishMatch(Match match) {
+
+    }
+
+    @Override
+    public List<Match> getSummary() {
+        return List.of();
     }
 }
