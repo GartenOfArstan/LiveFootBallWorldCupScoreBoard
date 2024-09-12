@@ -5,7 +5,7 @@ import java.util.List;
 public class ScoreBoard implements IScoreBoard{
 
     @Override
-    public void startMatch(Team homeTeam, Team awayTeam) {
+    public Match startMatch(Team homeTeam, Team awayTeam) {
 
     }
 
