@@ -19,36 +19,42 @@ ScoreBoard board = new ScoreBoard();
 
 The newly created scoreboard implements following methods:
 
-    1. Match startMatch(Team var1, Team var2);
+    1.Match startMatch(Team var1, Team var2);
 
-    creates a match inside the scoreboard with 0,0 as starting score. 
+creates a match inside the scoreboard with 0,0 as starting score. 
 
-    Example: 
+Example: 
 
     board.startMatch(new Team("Spain"), new Team("Portugal");
 
+ *** 
+
     2. void updateMatch(Match var1, Score var2);
 
-    updates an existing match with a score. example
+updates an existing match with a score. example
 
-    board.updateMatch(someMatch, new Score(1,0));
+board.updateMatch(someMatch, new Score(1,0));
+
+***
 
     3. void finishMatch(Match var1);
 
-    finalizes the match and removes it from the board. Example: 
+finalizes the match and removes it from the board. Example: 
 
     board.finishMatch(someMatch);
 
+***
+
     4. List<Match> getSummary();
     
-    retuns the list of active matches in order of creation. Example:
+retuns the list of active matches in order of creation. Example:
 
     Match match = board.getSummary().getFirst();
 
-    this can be used to get one of match objects from the list
+ this can be used to get one of match objects from the list
 
-    TODO: I think later maybe a 
-        Match getMatch(TeamPairing pairing) 
-        method needs to be implemented in order to make the process of getting corect match easier?
+TODO: I think later maybe a 
+Match getMatch(TeamPairing pairing) 
+method needs to be implemented in order to make the process of getting corect match easier?
 
 
