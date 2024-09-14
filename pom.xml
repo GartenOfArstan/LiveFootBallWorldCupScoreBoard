@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>si.arstan.scoreboard</groupId>
     <artifactId>liveFootBallWorldCupScoreBoard</artifactId>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>test-score-board</name>
     <dependencies>
@@ -68,6 +68,14 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
             </plugin>
         </plugins>
     </build>
