@@ -22,7 +22,7 @@ public class ConcurrentScoreBoardTest {
 
         Match match = scoreBoard.getSummary().getFirst();
 
-        RandomGenerator generator = RandomGenerator.JumpableGenerator.of("value");
+        RandomGenerator generator = RandomGenerator.of("L64X128MixRandom");
 
         ExecutorService service = Executors.newFixedThreadPool(NUMBER_OF_THREADS);
         CountDownLatch latch = new CountDownLatch(NUMBER_OF_THREADS);
